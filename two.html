@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+<script>
+
+
+var a = new Promise((one,two)=>{
+
+two("it is wrong")
+
+})
+
+a.then(first=>{
+
+console.log(first)
+}).catch(second=>{
+    console.log(second)
+}).finally(()=>{
+
+    console.log("termino el procesco")
+
+})
+
+
+</script>
+
+
+
+
+
+</body>
+
+</html>
